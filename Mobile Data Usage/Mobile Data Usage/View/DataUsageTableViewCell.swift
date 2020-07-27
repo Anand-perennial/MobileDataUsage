@@ -32,7 +32,7 @@ class DataUsageTableViewCell: UITableViewCell {
 
     func configureCell(record: YearlyDataUsage) {
         self.lblYear.text = record.name
-        self.lblDataUsage.text = String(format: "%.2f", record.getValumeData())
+        self.lblDataUsage.text = String(format: "%.5f", record.getValumeData())
         let decreaseInfo = record.decreaseVolumDataInfo()
         arrowImgView.isHidden =  decreaseInfo.0 == false
         btnImage.isHidden =  decreaseInfo.0 == false

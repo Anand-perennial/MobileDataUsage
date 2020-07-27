@@ -35,13 +35,23 @@
                     </subviews>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ym1-BO-WxF">
+                    <rect key="frame" x="0.0" y="49" width="382" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.517303036971831" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ul1-TC-7lm"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="emk-pf-qTK" firstAttribute="top" secondItem="ZUS-Uj-mLq" secondAttribute="top" id="5tl-6L-wHZ"/>
+                <constraint firstAttribute="bottom" secondItem="Ym1-BO-WxF" secondAttribute="bottom" id="DQ6-hy-SKs"/>
+                <constraint firstItem="Ym1-BO-WxF" firstAttribute="leading" secondItem="nCA-X3-RAF" secondAttribute="leading" id="LxU-al-43J"/>
                 <constraint firstItem="emk-pf-qTK" firstAttribute="leading" secondItem="ZUS-Uj-mLq" secondAttribute="leading" constant="60" id="Vhe-lg-Ben"/>
                 <constraint firstItem="nCA-X3-RAF" firstAttribute="bottom" secondItem="emk-pf-qTK" secondAttribute="bottom" id="qDp-ZM-scO"/>
                 <constraint firstItem="nCA-X3-RAF" firstAttribute="trailing" secondItem="emk-pf-qTK" secondAttribute="trailing" constant="20" id="ruY-SR-WOd"/>
+                <constraint firstItem="nCA-X3-RAF" firstAttribute="trailing" secondItem="Ym1-BO-WxF" secondAttribute="trailing" id="sF5-GQ-ATM"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

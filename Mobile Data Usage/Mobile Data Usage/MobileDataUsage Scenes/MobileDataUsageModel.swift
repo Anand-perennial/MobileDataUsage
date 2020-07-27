@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Realm
+import RealmSwift
 
 // MARK: - MobileDataUsageResponseDTO
 public struct MobileDataUsageResponseDTO: Codable {
@@ -108,5 +110,22 @@ class YearlyDataUsage: Codable {
             }
         }
         return valumeData
+    }
+}
+
+//---- Realm Object Mapping
+class DataStoreModelObject: Object {
+    @objc private dynamic var structData: Data?
+
+    var model: MobileDataUsageResponseDTO? {
+        get {
+            if let data = structData {
+                return try? JSONDecoder().decode(MobileDataUsageResponseDTO.self, from: data)
+            }
+            return nil
+        }
+        set {
+            structData = try? JSONEncoder().encode(newValue)
+        }
     }
 }

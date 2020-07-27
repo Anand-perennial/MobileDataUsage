@@ -1,5 +1,5 @@
 //
-//  d.swift
+//  MobileDataUsageViewModel.swift
 //  Mobile Data Usage
 //
 //  Created by Pere Dev on 27/07/20.
@@ -35,13 +35,34 @@ class MobileDataUsageViewModel {
     public func fetchMobileDataUsage(resourceID: String, limit: Int = 5, non completionHandler: @escaping (_ errorMeesage: String?) -> Void) {
         
         
+        //--- Use saved data if available.
+        self.dbService.fetchRecords(ofType: DataStoreModelObject(), completionHandler: { (arrSearchDataStoreItems) in
+            if arrSearchDataStoreItems.isEmpty {
+                debugPrint("No cache data to show.")
+            } else if let model = arrSearchDataStoreItems.first?.model {
+                self.ceateYearWiseData(model: model)
+                self.delegate?.showData()
+            }
+        })
+        
         let param: [String: Any] = ["resource_id": resourceID, "limit": limit]
         self.nwService.request(url: "datastore_search", method: .get, parameters: param, headers: [:], uRLEncoding: .default) { (result: Result<MobileDataUsageResponseDTO, APIError>) in
             //--- Validate result status
             switch result {
             case .success(let model):
                 self.ceateYearWiseData(model: model)
-               
+                //--- Save data for offline use.
+                let resultDataObj = DataStoreModelObject()
+                resultDataObj.model = model
+                
+                //--- Clear old cache data.
+                self.dbService.clearOldDataStoreData(completionHandler: { (_) in
+                    //--- Save latest data into cache.
+                    self.dbService.saveRecord(object: resultDataObj, completionHandler: { (isSuccess) in
+                        debugPrint("Is saved: \(isSuccess ? "YES" : "FAILED")")
+                    })
+                })
+                //--- Send ack.
                 self.delegate?.showData()
                 completionHandler(nil)
             case .failure(let error):
@@ -50,12 +71,18 @@ class MobileDataUsageViewModel {
                 if error.internetNotAvailble {
                     message = "Internet not available. Please try after some time"
                 }
+                
+                if self.yearsDataStore.isEmpty {
                     completionHandler(message)
+                    self.delegate?.showError(message: message)
+                } else {
+                    completionHandler(message)
+                }
             }
         }
     }
     
-    func ceateYearWiseData(model: MobileDataUsageResponseDTO) {
+    public func ceateYearWiseData(model: MobileDataUsageResponseDTO) {
                 
         var data: [String: [[String: String]]] = [ : ]
         for record in model.result.records {

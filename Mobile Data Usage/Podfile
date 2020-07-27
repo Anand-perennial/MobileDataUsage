@@ -9,7 +9,7 @@ target 'Mobile Data Usage' do
   pod 'Alamofire', '~> 5.2'
   pod 'SwiftLint'
   pod 'NVActivityIndicatorView'
-
+  pod 'RealmSwift'
 
   # Pods for Mobile Data Usage
 
