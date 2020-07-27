@@ -1,12 +1,12 @@
 # MobileDataUsage
 This application display the amount the of data sent over Singapore’s mobile networks.
-Getting the data from url https://data.gov.sg/api/action/datastore_search?resource_id=a807b7ab-6cad-4aa6-87d0-e283a7353a0f&limit=200
+Fetching the data from url https://data.gov.sg/api/action/datastore_search?resource_id=a807b7ab-6cad-4aa6-87d0-e283a7353a0f&limit=200
 
 
 # How to use:
-1. clone the repository
+1. Clone the repository
 2. Install Pod
-3. Run application using xcode
+3. Run application using Xcode
 
 # Application workflow:
 1. Application is develope using the MVVM architecture.
