@@ -25,6 +25,10 @@
 		9B59C84124CEC5C000D2BADC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59C84024CEC5C000D2BADC /* Protocols.swift */; };
 		9B59C84424CEC61F00D2BADC /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59C84324CEC61F00D2BADC /* ViewModelFactory.swift */; };
 		9B59C84724CEC6A700D2BADC /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59C84624CEC6A700D2BADC /* DBService.swift */; };
+		9B59C84B24CED40200D2BADC /* DataUsageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59C84A24CED40200D2BADC /* DataUsageTableViewCell.swift */; };
+		9B59C84E24CED43500D2BADC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59C84D24CED43500D2BADC /* UIView.swift */; };
+		9B59C85024CED78600D2BADC /* MobileDataUsageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59C84F24CED78600D2BADC /* MobileDataUsageHeaderView.swift */; };
+		9B59C85224CED79E00D2BADC /* MobileDataUsageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B59C85124CED79E00D2BADC /* MobileDataUsageHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		9B59C84024CEC5C000D2BADC /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		9B59C84324CEC61F00D2BADC /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
 		9B59C84624CEC6A700D2BADC /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
+		9B59C84A24CED40200D2BADC /* DataUsageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataUsageTableViewCell.swift; path = "Mobile Data Usage/View/DataUsageTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		9B59C84D24CED43500D2BADC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		9B59C84F24CED78600D2BADC /* MobileDataUsageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageHeaderView.swift; sourceTree = "<group>"; };
+		9B59C85124CED79E00D2BADC /* MobileDataUsageHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobileDataUsageHeaderView.xib; sourceTree = "<group>"; };
 		B52E29D37057E027C70D9477 /* Pods-Mobile Data Usage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Data Usage.debug.xcconfig"; path = "Target Support Files/Pods-Mobile Data Usage/Pods-Mobile Data Usage.debug.xcconfig"; sourceTree = "<group>"; };
 		E0E7F75F20264FAAC1FDC82B /* Pods_Mobile_Data_Usage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Data_Usage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +103,8 @@
 		9B59C81024CEB93C00D2BADC /* Mobile Data Usage */ = {
 			isa = PBXGroup;
 			children = (
+				9B59C84C24CED41700D2BADC /* Extension */,
+				9B59C84824CED35400D2BADC /* View */,
 				9B59C84224CEC60900D2BADC /* Factory */,
 				9B59C82524CEC07900D2BADC /* MobileDataUsage Scenes */,
 				9B59C82E24CEC27E00D2BADC /* Config */,
@@ -204,6 +214,32 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		9B59C84824CED35400D2BADC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B59C84924CED3F000D2BADC /* Cell */,
+				9B59C84F24CED78600D2BADC /* MobileDataUsageHeaderView.swift */,
+				9B59C85124CED79E00D2BADC /* MobileDataUsageHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9B59C84924CED3F000D2BADC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9B59C84A24CED40200D2BADC /* DataUsageTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9B59C84C24CED41700D2BADC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9B59C84D24CED43500D2BADC /* UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		EC74F900CEE21B44AF57D244 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +312,7 @@
 				9B59C81E24CEB93F00D2BADC /* LaunchScreen.storyboard in Resources */,
 				9B59C81B24CEB93F00D2BADC /* Assets.xcassets in Resources */,
 				9B59C81924CEB93C00D2BADC /* Main.storyboard in Resources */,
+				9B59C85224CED79E00D2BADC /* MobileDataUsageHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,10 +370,13 @@
 				9B59C83024CEC29C00D2BADC /* AppConfig.swift in Sources */,
 				9B59C84124CEC5C000D2BADC /* Protocols.swift in Sources */,
 				9B59C83F24CEC53600D2BADC /* MobileDataUsageModel.swift in Sources */,
+				9B59C85024CED78600D2BADC /* MobileDataUsageHeaderView.swift in Sources */,
 				9B59C81224CEB93C00D2BADC /* AppDelegate.swift in Sources */,
 				9B59C83D24CEC3AD00D2BADC /* ParseError.swift in Sources */,
+				9B59C84B24CED40200D2BADC /* DataUsageTableViewCell.swift in Sources */,
 				9B59C82724CEC0F500D2BADC /* MobileDataUsageViewModel.swift in Sources */,
 				9B59C83724CEC33F00D2BADC /* NetworkService.swift in Sources */,
+				9B59C84E24CED43500D2BADC /* UIView.swift in Sources */,
 				9B59C84724CEC6A700D2BADC /* DBService.swift in Sources */,
 				9B59C84424CEC61F00D2BADC /* ViewModelFactory.swift in Sources */,
 				9B59C83924CEC37300D2BADC /* Alamofire+Codable.swift in Sources */,

@@ -3,7 +3,7 @@
 //  Mobile Data Usage
 //
 //  Created by Pere Dev on 27/07/20.
-//  Copyright © 2020 Perennial System. All rights reserved.
+//  Copyright © 2020 Perennial Sys. All rights reserved.
 //
 
 import Foundation
@@ -57,4 +57,56 @@ struct Record: Codable {
         case recordID = "_id"
     }
     init() {}
+}
+
+
+class YearlyDataUsage: Codable {
+    
+    var name: String?
+    var quarters: [Record] = [Record]()
+    var isInfoVisiable = false
+    
+    init(name: String, quarters: [[String: String]]) {
+        self.name = name
+        for quarter in quarters {
+            var record = Record()
+            record.quarter = quarter["quarter"]
+            record.volumeOfMobileData =  quarter["volumeOfMobileData"]
+            self.quarters.append(record)
+        }
+        self.quarters.sort { (r1, r2) -> Bool in
+            return r1.quarter! < r2.quarter!
+        }
+    }
+    
+    func decreaseVolumDataInfo() -> (Bool, String) {
+        var valumeData = 0.0
+        var infoMessage = "Data get decrease in Quarter"
+        var isDecrease = false
+        for quarter in quarters {
+            if let volume = quarter.volumeOfMobileData, let numberData = Double(volume) {
+                if numberData < valumeData {
+                    infoMessage += " " + quarter.quarter!   + ","
+                    isDecrease = true
+                }
+                valumeData = numberData
+            }
+        }
+        infoMessage.removeLast()
+        return (isDecrease, infoMessage)
+    }
+    
+     func changeInfoVisiableStatus() {
+        isInfoVisiable = !isInfoVisiable
+    }
+    
+    func getValumeData() -> Double {
+        var valumeData = 0.0
+        for quarter in quarters {
+            if let volume = quarter.volumeOfMobileData, let numberData = Double(volume) {
+                valumeData += numberData
+            }
+        }
+        return valumeData
+    }
 }

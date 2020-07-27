@@ -8,6 +8,8 @@ target 'Mobile Data Usage' do
  use_frameworks!
   pod 'Alamofire', '~> 5.2'
   pod 'SwiftLint'
+  pod 'NVActivityIndicatorView'
+
 
   # Pods for Mobile Data Usage
 
