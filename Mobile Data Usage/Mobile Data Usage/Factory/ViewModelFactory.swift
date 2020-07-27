@@ -10,7 +10,6 @@ import Foundation
 
 enum ViewModelType {
    case modelDataUsage
-   case other
 }
 
 class ViewModelFactory {
@@ -22,8 +21,6 @@ class ViewModelFactory {
             let nwService = AppService.Network()
             let mobileDataUsage = MobileDataUsageViewModel.init(dbService: dbService, nwService: nwService)
             return mobileDataUsage
-        default:
-            return nil
         }
     }
 }

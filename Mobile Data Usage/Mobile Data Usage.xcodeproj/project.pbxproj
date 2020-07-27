@@ -29,7 +29,34 @@
 		9B59C84E24CED43500D2BADC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59C84D24CED43500D2BADC /* UIView.swift */; };
 		9B59C85024CED78600D2BADC /* MobileDataUsageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59C84F24CED78600D2BADC /* MobileDataUsageHeaderView.swift */; };
 		9B59C85224CED79E00D2BADC /* MobileDataUsageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B59C85124CED79E00D2BADC /* MobileDataUsageHeaderView.xib */; };
+		9BAD8C1B24CEEE8300026F02 /* Mobile_Data_UsageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C1A24CEEE8200026F02 /* Mobile_Data_UsageUITests.swift */; };
+		9BAD8C2424CEF0B800026F02 /* MobileUsageMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2324CEF0B800026F02 /* MobileUsageMockData.json */; };
+		9BAD8C2924CEF10A00026F02 /* MocNWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2824CEF10A00026F02 /* MocNWService.swift */; };
+		9BAD8C2C24CF02DA00026F02 /* SerializeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2B24CEF23100026F02 /* SerializeUtility.swift */; };
+		9BAD8C3824CF061B00026F02 /* Mobile_Data_Usage_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C3724CF061B00026F02 /* Mobile_Data_Usage_Unit_Tests.swift */; };
+		9BAD8C3F24CF062600026F02 /* MobileDataUsageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2D24CF032600026F02 /* MobileDataUsageViewModelTests.swift */; };
+		9BAD8C4024CF062600026F02 /* DatabaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2F24CF043000026F02 /* DatabaseServiceTests.swift */; };
+		9BAD8C4124CF081700026F02 /* MobileUsageMockData2015.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2524CEF0BC00026F02 /* MobileUsageMockData2015.json */; };
+		9BAD8C4224CF081A00026F02 /* MobileDataUsageParsingError.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2624CEF0BE00026F02 /* MobileDataUsageParsingError.json */; };
+		9BAD8C4524CF12C400026F02 /* MobileDataUsageViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C4324CF0E7E00026F02 /* MobileDataUsageViewControllerTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BAD8C1D24CEEE8300026F02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B59C80624CEB93C00D2BADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B59C80D24CEB93C00D2BADC;
+			remoteInfo = "Mobile Data Usage";
+		};
+		9BAD8C3A24CF061B00026F02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B59C80624CEB93C00D2BADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B59C80D24CEB93C00D2BADC;
+			remoteInfo = "Mobile Data Usage";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		50238C89755A9DD267ADE462 /* Pods-Mobile Data Usage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Data Usage.release.xcconfig"; path = "Target Support Files/Pods-Mobile Data Usage/Pods-Mobile Data Usage.release.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +83,20 @@
 		9B59C84D24CED43500D2BADC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		9B59C84F24CED78600D2BADC /* MobileDataUsageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageHeaderView.swift; sourceTree = "<group>"; };
 		9B59C85124CED79E00D2BADC /* MobileDataUsageHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobileDataUsageHeaderView.xib; sourceTree = "<group>"; };
+		9BAD8C1824CEEE8200026F02 /* Mobile Data UsageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Data UsageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BAD8C1A24CEEE8200026F02 /* Mobile_Data_UsageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Data_UsageUITests.swift; sourceTree = "<group>"; };
+		9BAD8C1C24CEEE8300026F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BAD8C2324CEF0B800026F02 /* MobileUsageMockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MobileUsageMockData.json; sourceTree = "<group>"; };
+		9BAD8C2524CEF0BC00026F02 /* MobileUsageMockData2015.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MobileUsageMockData2015.json; sourceTree = "<group>"; };
+		9BAD8C2624CEF0BE00026F02 /* MobileDataUsageParsingError.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MobileDataUsageParsingError.json; sourceTree = "<group>"; };
+		9BAD8C2824CEF10A00026F02 /* MocNWService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocNWService.swift; sourceTree = "<group>"; };
+		9BAD8C2B24CEF23100026F02 /* SerializeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializeUtility.swift; sourceTree = "<group>"; };
+		9BAD8C2D24CF032600026F02 /* MobileDataUsageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageViewModelTests.swift; sourceTree = "<group>"; };
+		9BAD8C2F24CF043000026F02 /* DatabaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseServiceTests.swift; sourceTree = "<group>"; };
+		9BAD8C3524CF061B00026F02 /* Mobile Data Usage Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Data Usage Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BAD8C3724CF061B00026F02 /* Mobile_Data_Usage_Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Data_Usage_Unit_Tests.swift; sourceTree = "<group>"; };
+		9BAD8C3924CF061B00026F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BAD8C4324CF0E7E00026F02 /* MobileDataUsageViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageViewControllerTest.swift; sourceTree = "<group>"; };
 		B52E29D37057E027C70D9477 /* Pods-Mobile Data Usage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Data Usage.debug.xcconfig"; path = "Target Support Files/Pods-Mobile Data Usage/Pods-Mobile Data Usage.debug.xcconfig"; sourceTree = "<group>"; };
 		E0E7F75F20264FAAC1FDC82B /* Pods_Mobile_Data_Usage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Data_Usage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +107,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AA575E56F8DF09C583C0E2F /* Pods_Mobile_Data_Usage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BAD8C1524CEEE8200026F02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BAD8C3224CF061B00026F02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +141,8 @@
 			children = (
 				9B59C82824CEC15B00D2BADC /* .swiftlint.yml */,
 				9B59C81024CEB93C00D2BADC /* Mobile Data Usage */,
+				9BAD8C1924CEEE8200026F02 /* Mobile Data UsageUITests */,
+				9BAD8C3624CF061B00026F02 /* Mobile Data Usage Unit Tests */,
 				9B59C80F24CEB93C00D2BADC /* Products */,
 				7BA92F31002239FFE54C1889 /* Pods */,
 				EC74F900CEE21B44AF57D244 /* Frameworks */,
@@ -96,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				9B59C80E24CEB93C00D2BADC /* Mobile Data Usage.app */,
+				9BAD8C1824CEEE8200026F02 /* Mobile Data UsageUITests.xctest */,
+				9BAD8C3524CF061B00026F02 /* Mobile Data Usage Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +170,7 @@
 				9B59C82E24CEC27E00D2BADC /* Config */,
 				9B59C82B24CEC1A600D2BADC /* Resources */,
 				9B59C82A24CEC19000D2BADC /* Storyboard */,
+				9BAD8C2A24CEF22300026F02 /* Utility */,
 				9B59C81124CEB93C00D2BADC /* AppDelegate.swift */,
 				9B59C81F24CEB93F00D2BADC /* Info.plist */,
 			);
@@ -140,6 +200,7 @@
 		9B59C82B24CEC1A600D2BADC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9BAD8C2224CEF06C00026F02 /* MocData */,
 				9B59C82C24CEC1F600D2BADC /* Assets */,
 			);
 			path = Resources;
@@ -158,6 +219,7 @@
 			children = (
 				9B59C84524CEC68200D2BADC /* Database */,
 				9B59C83324CEC30A00D2BADC /* Network */,
+				9BAD8C2724CEF0F600026F02 /* MocService */,
 				9B59C83124CEC2F100D2BADC /* Services.swift */,
 			);
 			path = Services;
@@ -240,6 +302,53 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		9BAD8C1924CEEE8200026F02 /* Mobile Data UsageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD8C1A24CEEE8200026F02 /* Mobile_Data_UsageUITests.swift */,
+				9BAD8C1C24CEEE8300026F02 /* Info.plist */,
+			);
+			path = "Mobile Data UsageUITests";
+			sourceTree = "<group>";
+		};
+		9BAD8C2224CEF06C00026F02 /* MocData */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD8C2524CEF0BC00026F02 /* MobileUsageMockData2015.json */,
+				9BAD8C2624CEF0BE00026F02 /* MobileDataUsageParsingError.json */,
+				9BAD8C2324CEF0B800026F02 /* MobileUsageMockData.json */,
+			);
+			path = MocData;
+			sourceTree = "<group>";
+		};
+		9BAD8C2724CEF0F600026F02 /* MocService */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD8C2824CEF10A00026F02 /* MocNWService.swift */,
+			);
+			path = MocService;
+			sourceTree = "<group>";
+		};
+		9BAD8C2A24CEF22300026F02 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD8C2B24CEF23100026F02 /* SerializeUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9BAD8C3624CF061B00026F02 /* Mobile Data Usage Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD8C4324CF0E7E00026F02 /* MobileDataUsageViewControllerTest.swift */,
+				9BAD8C3724CF061B00026F02 /* Mobile_Data_Usage_Unit_Tests.swift */,
+				9BAD8C2D24CF032600026F02 /* MobileDataUsageViewModelTests.swift */,
+				9BAD8C2F24CF043000026F02 /* DatabaseServiceTests.swift */,
+				9BAD8C3924CF061B00026F02 /* Info.plist */,
+			);
+			path = "Mobile Data Usage Unit Tests";
+			sourceTree = "<group>";
+		};
 		EC74F900CEE21B44AF57D244 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +379,42 @@
 			productReference = 9B59C80E24CEB93C00D2BADC /* Mobile Data Usage.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9BAD8C1724CEEE8200026F02 /* Mobile Data UsageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BAD8C1F24CEEE8300026F02 /* Build configuration list for PBXNativeTarget "Mobile Data UsageUITests" */;
+			buildPhases = (
+				9BAD8C1424CEEE8200026F02 /* Sources */,
+				9BAD8C1524CEEE8200026F02 /* Frameworks */,
+				9BAD8C1624CEEE8200026F02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BAD8C1E24CEEE8300026F02 /* PBXTargetDependency */,
+			);
+			name = "Mobile Data UsageUITests";
+			productName = "Mobile Data UsageUITests";
+			productReference = 9BAD8C1824CEEE8200026F02 /* Mobile Data UsageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9BAD8C3424CF061B00026F02 /* Mobile Data Usage Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BAD8C3C24CF061B00026F02 /* Build configuration list for PBXNativeTarget "Mobile Data Usage Unit Tests" */;
+			buildPhases = (
+				9BAD8C3124CF061B00026F02 /* Sources */,
+				9BAD8C3224CF061B00026F02 /* Frameworks */,
+				9BAD8C3324CF061B00026F02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BAD8C3B24CF061B00026F02 /* PBXTargetDependency */,
+			);
+			name = "Mobile Data Usage Unit Tests";
+			productName = "Mobile Data Usage Unit Tests";
+			productReference = 9BAD8C3524CF061B00026F02 /* Mobile Data Usage Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -282,6 +427,14 @@
 				TargetAttributes = {
 					9B59C80D24CEB93C00D2BADC = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					9BAD8C1724CEEE8200026F02 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 9B59C80D24CEB93C00D2BADC;
+					};
+					9BAD8C3424CF061B00026F02 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 9B59C80D24CEB93C00D2BADC;
 					};
 				};
 			};
@@ -299,6 +452,8 @@
 			projectRoot = "";
 			targets = (
 				9B59C80D24CEB93C00D2BADC /* Mobile Data Usage */,
+				9BAD8C1724CEEE8200026F02 /* Mobile Data UsageUITests */,
+				9BAD8C3424CF061B00026F02 /* Mobile Data Usage Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,9 +465,26 @@
 			files = (
 				9B59C82924CEC15B00D2BADC /* .swiftlint.yml in Resources */,
 				9B59C81E24CEB93F00D2BADC /* LaunchScreen.storyboard in Resources */,
+				9BAD8C4224CF081A00026F02 /* MobileDataUsageParsingError.json in Resources */,
 				9B59C81B24CEB93F00D2BADC /* Assets.xcassets in Resources */,
 				9B59C81924CEB93C00D2BADC /* Main.storyboard in Resources */,
 				9B59C85224CED79E00D2BADC /* MobileDataUsageHeaderView.xib in Resources */,
+				9BAD8C4124CF081700026F02 /* MobileUsageMockData2015.json in Resources */,
+				9BAD8C2424CEF0B800026F02 /* MobileUsageMockData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BAD8C1624CEEE8200026F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BAD8C3324CF061B00026F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,15 +548,49 @@
 				9B59C84B24CED40200D2BADC /* DataUsageTableViewCell.swift in Sources */,
 				9B59C82724CEC0F500D2BADC /* MobileDataUsageViewModel.swift in Sources */,
 				9B59C83724CEC33F00D2BADC /* NetworkService.swift in Sources */,
+				9BAD8C2924CEF10A00026F02 /* MocNWService.swift in Sources */,
 				9B59C84E24CED43500D2BADC /* UIView.swift in Sources */,
 				9B59C84724CEC6A700D2BADC /* DBService.swift in Sources */,
 				9B59C84424CEC61F00D2BADC /* ViewModelFactory.swift in Sources */,
+				9BAD8C2C24CF02DA00026F02 /* SerializeUtility.swift in Sources */,
 				9B59C83924CEC37300D2BADC /* Alamofire+Codable.swift in Sources */,
 				9B59C83B24CEC38E00D2BADC /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BAD8C1424CEEE8200026F02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BAD8C1B24CEEE8300026F02 /* Mobile_Data_UsageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BAD8C3124CF061B00026F02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BAD8C4524CF12C400026F02 /* MobileDataUsageViewControllerTest.swift in Sources */,
+				9BAD8C3F24CF062600026F02 /* MobileDataUsageViewModelTests.swift in Sources */,
+				9BAD8C3824CF061B00026F02 /* Mobile_Data_Usage_Unit_Tests.swift in Sources */,
+				9BAD8C4024CF062600026F02 /* DatabaseServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BAD8C1E24CEEE8300026F02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B59C80D24CEB93C00D2BADC /* Mobile Data Usage */;
+			targetProxy = 9BAD8C1D24CEEE8300026F02 /* PBXContainerItemProxy */;
+		};
+		9BAD8C3B24CF061B00026F02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B59C80D24CEB93C00D2BADC /* Mobile Data Usage */;
+			targetProxy = 9BAD8C3A24CF061B00026F02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9B59C81724CEB93C00D2BADC /* Main.storyboard */ = {
@@ -564,6 +770,84 @@
 			};
 			name = Release;
 		};
+		9BAD8C2024CEEE8300026F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QAD9449BNE;
+				INFOPLIST_FILE = "Mobile Data UsageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perennial.com.Mobile-Data-UsageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mobile Data Usage";
+			};
+			name = Debug;
+		};
+		9BAD8C2124CEEE8300026F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QAD9449BNE;
+				INFOPLIST_FILE = "Mobile Data UsageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perennial.com.Mobile-Data-UsageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mobile Data Usage";
+			};
+			name = Release;
+		};
+		9BAD8C3D24CF061B00026F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QAD9449BNE;
+				INFOPLIST_FILE = "Mobile Data Usage Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perennial.com.Mobile-Data-Usage-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Data Usage.app/Mobile Data Usage";
+			};
+			name = Debug;
+		};
+		9BAD8C3E24CF061B00026F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QAD9449BNE;
+				INFOPLIST_FILE = "Mobile Data Usage Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perennial.com.Mobile-Data-Usage-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Data Usage.app/Mobile Data Usage";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +865,24 @@
 			buildConfigurations = (
 				9B59C82324CEB93F00D2BADC /* Debug */,
 				9B59C82424CEB93F00D2BADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BAD8C1F24CEEE8300026F02 /* Build configuration list for PBXNativeTarget "Mobile Data UsageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BAD8C2024CEEE8300026F02 /* Debug */,
+				9BAD8C2124CEEE8300026F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BAD8C3C24CF061B00026F02 /* Build configuration list for PBXNativeTarget "Mobile Data Usage Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BAD8C3D24CF061B00026F02 /* Debug */,
+				9BAD8C3E24CF061B00026F02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

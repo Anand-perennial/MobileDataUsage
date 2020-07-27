@@ -11,7 +11,7 @@
         <!--Mobile Data Usage View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MobileDataUsageViewController" customModule="Mobile_Data_Usage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MobileDataUsageViewController" id="BYZ-38-t0r" customClass="MobileDataUsageViewController" customModule="Mobile_Data_Usage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,7 +166,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ArrowDown" width="128" height="128"/>
-        <image name="ArrowRight" width="128" height="128"/>
+        <image name="ArrowDown" width="21" height="12"/>
+        <image name="ArrowRight" width="12" height="21"/>
     </resources>
 </document>
