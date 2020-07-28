@@ -33,7 +33,6 @@
 		9BAD8C2424CEF0B800026F02 /* MobileUsageMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2324CEF0B800026F02 /* MobileUsageMockData.json */; };
 		9BAD8C2924CEF10A00026F02 /* MocNWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2824CEF10A00026F02 /* MocNWService.swift */; };
 		9BAD8C2C24CF02DA00026F02 /* SerializeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2B24CEF23100026F02 /* SerializeUtility.swift */; };
-		9BAD8C3824CF061B00026F02 /* Mobile_Data_Usage_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C3724CF061B00026F02 /* Mobile_Data_Usage_Unit_Tests.swift */; };
 		9BAD8C3F24CF062600026F02 /* MobileDataUsageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2D24CF032600026F02 /* MobileDataUsageViewModelTests.swift */; };
 		9BAD8C4024CF062600026F02 /* DatabaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2F24CF043000026F02 /* DatabaseServiceTests.swift */; };
 		9BAD8C4124CF081700026F02 /* MobileUsageMockData2015.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BAD8C2524CEF0BC00026F02 /* MobileUsageMockData2015.json */; };
@@ -94,7 +93,6 @@
 		9BAD8C2D24CF032600026F02 /* MobileDataUsageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageViewModelTests.swift; sourceTree = "<group>"; };
 		9BAD8C2F24CF043000026F02 /* DatabaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseServiceTests.swift; sourceTree = "<group>"; };
 		9BAD8C3524CF061B00026F02 /* Mobile Data Usage Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Data Usage Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BAD8C3724CF061B00026F02 /* Mobile_Data_Usage_Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Data_Usage_Unit_Tests.swift; sourceTree = "<group>"; };
 		9BAD8C3924CF061B00026F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BAD8C4324CF0E7E00026F02 /* MobileDataUsageViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageViewControllerTest.swift; sourceTree = "<group>"; };
 		B52E29D37057E027C70D9477 /* Pods-Mobile Data Usage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Data Usage.debug.xcconfig"; path = "Target Support Files/Pods-Mobile Data Usage/Pods-Mobile Data Usage.debug.xcconfig"; sourceTree = "<group>"; };
@@ -341,7 +339,6 @@
 			isa = PBXGroup;
 			children = (
 				9BAD8C4324CF0E7E00026F02 /* MobileDataUsageViewControllerTest.swift */,
-				9BAD8C3724CF061B00026F02 /* Mobile_Data_Usage_Unit_Tests.swift */,
 				9BAD8C2D24CF032600026F02 /* MobileDataUsageViewModelTests.swift */,
 				9BAD8C2F24CF043000026F02 /* DatabaseServiceTests.swift */,
 				9BAD8C3924CF061B00026F02 /* Info.plist */,
@@ -572,7 +569,6 @@
 			files = (
 				9BAD8C4524CF12C400026F02 /* MobileDataUsageViewControllerTest.swift in Sources */,
 				9BAD8C3F24CF062600026F02 /* MobileDataUsageViewModelTests.swift in Sources */,
-				9BAD8C3824CF061B00026F02 /* Mobile_Data_Usage_Unit_Tests.swift in Sources */,
 				9BAD8C4024CF062600026F02 /* DatabaseServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
